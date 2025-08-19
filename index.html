@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-r from-blue-400 to-indigo-600 min-h-screen flex items-center justify-center transition-all duration-700">
+
+  <!-- Card -->
+  <div id="weatherCard" class="bg-white/20 backdrop-blur-lg p-8 rounded-2xl shadow-2xl w-full max-w-md text-center transform transition-all duration-700 hover:scale-105">
+    <h1 class="text-3xl font-extrabold mb-6 text-white drop-shadow-lg animate-pulse">🌍 Weather App</h1>
+
+    <!-- Search -->
+    <div class="flex gap-2 justify-center mb-8">
+      <input id="cityInput" type="text" placeholder="Enter city..."
+        class="px-4 py-3 rounded-lg w-2/3 border-none outline-none shadow-inner focus:ring-2 focus:ring-indigo-500">
+      <button id="searchBtn"
+        class="px-5 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg shadow-lg hover:scale-110 transition transform">
+        🔍
+      </button>
+    </div>
+
+    <!-- Weather Result -->
+    <div id="weatherResult" class="text-white space-y-4"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
